@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TwWallpaperChooser</string>
+    <string name="wallpaper_instructions">배경화면 설정</string>
+    <string name="pick_wallpaper">배경화면 갤러리</string>
+</resources>

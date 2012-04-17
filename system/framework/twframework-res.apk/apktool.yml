@@ -1,0 +1,6 @@
+version: 1.4.5
+apkFileName: twframework-res.apk
+isFrameworkApk: true
+usesFramework:
+  ids:
+  - 1

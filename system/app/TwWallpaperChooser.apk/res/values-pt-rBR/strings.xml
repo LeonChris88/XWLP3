@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallpaper_instructions">Definir papel de parede</string>
+    <string name="pick_wallpaper">Galeria de papéis de parede</string>
+</resources>
