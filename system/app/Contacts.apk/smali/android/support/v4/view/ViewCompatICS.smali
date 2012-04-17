@@ -1,0 +1,23 @@
+.class Landroid/support/v4/view/ViewCompatICS;
+.super Ljava/lang/Object;
+.source "ViewCompatICS.java"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static canScrollHorizontally(Landroid/view/View;I)Z
+    .locals 1
+
+    invoke-virtual {p0, p1}, Landroid/view/View;->canScrollHorizontally(I)Z
+
+    move-result v0
+
+    return v0
+.end method
