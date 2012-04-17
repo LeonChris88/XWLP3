@@ -7132,7 +7132,7 @@
 .end method
 
 .method public showClock(Z)V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mStatusBarView:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
@@ -7148,6 +7148,22 @@
 
     const/4 v0, 0x0
 
+	iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+
+	invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+	move-result-object v2
+
+	const-string v3, "hide_time"
+
+	invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+	
+	move-result v2
+	
+	if-eqz v2, :goto_0
+	
+	const/16 v0, 0x8
+	
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
